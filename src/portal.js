@@ -33,6 +33,8 @@ class Portal extends Component {
     }
 
     this.el = document.createElement("div");
+    //this.el.classList.add('bar');
+    this.el.setAttribute("Class", "bar")
 
 
   }
@@ -55,7 +57,7 @@ class Portal extends Component {
                 {this.props.children}
                 <button onClick={this.props.close} type="button" style={{...styles.toggleColor, backgroundColor:"green",padding:10, border:"1px solid black",color:"#ffffff",margin:"20px 0px"}}>Close</button>
         </div>,
-        this.el
+        portal
         )
   }
 }
